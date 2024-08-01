@@ -59,6 +59,9 @@ extern crate alloc;
 #[macro_use]
 extern crate std;
 
+#[cfg(all(target_os = "zkvm"))]
+extern crate zkm2_lib;
+
 #[cfg(feature = "digest")]
 pub use digest;
 
